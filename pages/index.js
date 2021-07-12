@@ -127,6 +127,18 @@ export async function getStaticProps() {
       phonenumber: "",
       other: "",
     },
+    {
+      name: "ศูนย์ประสานฉุกเฉินไทยพีบีเอสช่วยโควิด-19 รับเรื่องร้องเรียนเกี่ยวกับโควิด-19",
+      link: "https://www.facebook.com/RongtookThaiPBS/",
+      phonenumber: "",
+      other: "line : @RongTookThaiPBS",
+    },
+    {
+      name: "walk together",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScsJdXFAf9wBEn59e0cndZeT2-pFaL71ee5DS2t_AF6dVOI4A/viewform",
+      phonenumber: "",
+      other: "",
+    },
   ];
   return {
     props: {
