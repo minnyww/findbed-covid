@@ -61,17 +61,15 @@ export default function Home({ lists }) {
           ข้อมูลสำหรับช่วยเหลือผู้ป่วย
         </Typography.Title>
       </Row>
-      <div style={{ padding: "2rem" }}>
-        <Table
-          columns={columns}
-          dataSource={lists}
-          size="small"
-          pagination={{ pageSize: 50 }}
-          rowKey={(row) => {
-            return row.key;
-          }}
-        />
-      </div>
+      <Table
+        columns={columns}
+        dataSource={lists}
+        size="small"
+        pagination={{ pageSize: 50 }}
+        rowKey={(row) => {
+          return row.key;
+        }}
+      />
     </div>
   );
 }
