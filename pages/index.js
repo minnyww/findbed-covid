@@ -14,7 +14,18 @@ const columns = [
     key: "phonenumber",
     // eslint-disable-next-line react/display-name
     render: (text) => {
-      return <a href={`tel:${text}`}>{text}</a>;
+      if (!text) return null;
+      return (
+        <div>
+          {text.split(",").map((phone) => {
+            return (
+              <a key={phone} href={`tel:${phone}`}>
+                {phone},
+              </a>
+            );
+          })}
+        </div>
+      );
     },
   },
   {
@@ -170,7 +181,7 @@ export async function getStaticProps() {
     {
       name: "ลงทะเบียนจัดสรรเตียง 1668",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSd5jJKnT-Vw4IZ4aiFqNKiANxuIRhzq7ngm5EBdvURCYRfR3g/viewform",
-      phonenumber: "-",
+      phonenumber: "",
       other: "-",
       key: 16,
     },
