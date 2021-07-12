@@ -37,6 +37,7 @@ const columns = [
     width: "10%",
     // eslint-disable-next-line react/display-name
     render: (text) => {
+      if (!text) return "-";
       return (
         <a style={{ color: "#1890ff" }} href={`${text}`}>
           click
