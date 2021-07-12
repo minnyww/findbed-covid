@@ -54,6 +54,13 @@ export default function Home({ lists }) {
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="หาเตียงโควิด" />
+        <meta property="og:url" content="https://findbed-covid.vercel.app/" />
+        <meta
+          property="og:description"
+          content="หาเตียงโควิด หาเตียง หาเตียง covid"
+        ></meta>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Row style={{ padding: "1rem" }}>
