@@ -222,7 +222,7 @@ export async function getStaticProps() {
       link: "https://www.facebook.com/savethailandsafe",
       phonenumber: "",
       other: "line : @iwillsurvive",
-      key: 19,
+      key: 20,
     },
   ];
   return {
