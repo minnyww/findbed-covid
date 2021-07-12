@@ -31,7 +31,7 @@ const columns = [
     },
   },
   {
-    title: "ลิ้ง",
+    title: "ลิงก์",
     dataIndex: "link",
     key: "key",
     width: "10%",
