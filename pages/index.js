@@ -22,7 +22,7 @@ const columns = [
           {text.split(",").map((phone) => {
             return (
               <a key={phone} href={`tel:${phone}`}>
-                <Tag color="orange">{phone},</Tag>
+                <Tag color="orange">{phone}</Tag>
               </a>
             );
           })}
