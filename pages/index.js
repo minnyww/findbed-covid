@@ -21,6 +21,10 @@ const columns = [
     title: "ลิ้ง",
     dataIndex: "link",
     key: "key",
+    // eslint-disable-next-line react/display-name
+    render: (text) => {
+      return <a href={`${text}`}>{text}</a>;
+    },
   },
   {
     title: "อื่นๆ",
@@ -102,14 +106,14 @@ export async function getStaticProps() {
     },
     {
       name: "เพจเส้นด้าย-Zendai",
-      link: "zendai.org",
+      link: "https://www.facebook.com/zendai.org",
       phonenumber: "081-591-9714, 080-660-9998, 097-119-68,02-096-5000",
       other: "",
       key: 7,
     },
     {
       name: "เพจสรยุทธ กรรมกรข่าว",
-      link: "สรยุทธ สุทัศนะจินดา กรรมกรข่าว",
+      link: "https://www.facebook.com/sorrayuth9115",
       phonenumber: "",
       other: "",
       key: 8,
@@ -123,28 +127,28 @@ export async function getStaticProps() {
     },
     {
       name: "ไทยรัฐนิวส์โชว์",
-      link: "newsshow32",
+      link: "https://www.facebook.com/newsshow32/",
       phonenumber: "",
       other: "",
       key: 10,
     },
     {
       name: "พรรคกล้า",
-      link: "klaparty",
+      link: "https://www.facebook.com/klaparty",
       phonenumber: "",
       other: "",
       key: 11,
     },
     {
       name: "ทีมอนุดิษฐ์-AnudithTeam",
-      link: "AnudithTeam",
+      link: "https://www.facebook.com/AnudithTeam",
       phonenumber: "",
       other: "",
       key: 12,
     },
     {
       name: "ปอเปี๊ยะ กาลเวลา",
-      link: "porpeerfanpage , porpeer",
+      link: "https://www.facebook.com/porpeerfanpage",
       phonenumber: "",
       other: "",
       key: 13,
