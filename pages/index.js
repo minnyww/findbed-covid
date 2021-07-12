@@ -224,6 +224,24 @@ export async function getStaticProps() {
       other: "line : @iwillsurvive",
       key: 20,
     },
+    {
+      name: "ลงทะเบียนเพื่อช่วยหาเตียง COVID-19 sabaideebot",
+      link: "https://self-screening-covid-19-sxinbg.web.app/dispatch-case",
+      phonenumber: "",
+      key: 21,
+    },
+    {
+      name: "ฟอร์มลงทะเบียนหาเตียง กทม",
+      link: "https://bkkcovid19connect.airesearch.in.th/",
+      phonenumber: "",
+      key: 22,
+    },
+    {
+      name: "ทีมดร.ปวิน",
+      link: "",
+      phonenumber: "0917899393",
+      key: 23,
+    },
   ];
   return {
     props: {
