@@ -50,6 +50,10 @@ export default function Home({ lists }) {
       <Head>
         <title>หาเตียง</title>
         <meta name="description" content="หาเตียง ช่วยเหลือผู้ป่วย covid 19" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+        />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Row style={{ padding: "1rem" }}>
@@ -57,15 +61,17 @@ export default function Home({ lists }) {
           ข้อมูลสำหรับช่วยเหลือผู้ป่วย
         </Typography.Title>
       </Row>
-      <Table
-        columns={columns}
-        dataSource={lists}
-        size="small"
-        pagination={{ pageSize: 50 }}
-        rowKey={(row) => {
-          return row.key;
-        }}
-      />
+      <div style={{ padding: "2rem" }}>
+        <Table
+          columns={columns}
+          dataSource={lists}
+          size="small"
+          pagination={{ pageSize: 50 }}
+          rowKey={(row) => {
+            return row.key;
+          }}
+        />
+      </div>
     </div>
   );
 }
