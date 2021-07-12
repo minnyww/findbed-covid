@@ -51,6 +51,8 @@ const columns = [
     key: "other",
   },
 ];
+// G-2T6X6GCGC2
+// UA-201971423-1
 
 export default function Home({ lists }) {
   return (
@@ -69,7 +71,7 @@ export default function Home({ lists }) {
           property="og:description"
           content="หาเตียงโควิด หาเตียง หาเตียง covid"
         ></meta>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Row style={{ padding: "1rem" }}>
         <Typography.Title level={2}>
