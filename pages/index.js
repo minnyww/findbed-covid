@@ -189,6 +189,41 @@ export async function getStaticProps() {
       other: "-",
       key: 16,
     },
+    {
+      name: "ใครติดสะกิดมาร์ท",
+      link: "https://www.facebook.com/Apiwat.dansrichanchai",
+      phonenumber: "064-939-4691",
+      other: "-",
+      key: 17,
+    },
+    {
+      name: "โควิดล้อถึงเตียง",
+      link: "https://www.facebook.com/CC.Kontumngan",
+      phonenumber: "",
+      other: "-",
+      key: 18,
+    },
+    {
+      name: "พรรคประชาธิปัตย์",
+      link: "",
+      phonenumber: "",
+      other: "line : @peakpanasin",
+      key: 18,
+    },
+    {
+      name: "สบายดีบอต",
+      link: "https://page.line.me/sabaideebot?openQrModal=true",
+      phonenumber: "",
+      other: "line : @sabaideebot",
+      key: 19,
+    },
+    {
+      name: "เราต้องรอด",
+      link: "https://www.facebook.com/savethailandsafe",
+      phonenumber: "",
+      other: "line : @iwillsurvive",
+      key: 19,
+    },
   ];
   return {
     props: {
