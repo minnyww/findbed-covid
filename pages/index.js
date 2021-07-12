@@ -256,6 +256,12 @@ export async function getStaticProps() {
       phonenumber: "0917899393",
       key: 24,
     },
+    {
+      name: "สายด่วนภาครัฐ",
+      link: "",
+      phonenumber: "1111",
+      key: 25,
+    },
   ];
   return {
     props: {
