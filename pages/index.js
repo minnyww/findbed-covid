@@ -1,4 +1,4 @@
-import { Row, Typography, Table } from "antd";
+import { Row, Typography, Table, Tag } from "antd";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
@@ -7,11 +7,13 @@ const columns = [
     title: "ชื่อ",
     dataIndex: "name",
     key: "name",
+    width: "35%",
   },
   {
     title: "เบอร์",
     dataIndex: "phonenumber",
     key: "phonenumber",
+    width: "40%",
     // eslint-disable-next-line react/display-name
     render: (text) => {
       if (!text) return null;
@@ -20,7 +22,7 @@ const columns = [
           {text.split(",").map((phone) => {
             return (
               <a key={phone} href={`tel:${phone}`}>
-                {phone},
+                <Tag color="orange">{phone},</Tag>
               </a>
             );
           })}
@@ -32,9 +34,14 @@ const columns = [
     title: "ลิ้ง",
     dataIndex: "link",
     key: "key",
+    width: "10%",
     // eslint-disable-next-line react/display-name
     render: (text) => {
-      return <a href={`${text}`}>{text}</a>;
+      return (
+        <a style={{ color: "#1890ff" }} href={`${text}`}>
+          click
+        </a>
+      );
     },
   },
   {
