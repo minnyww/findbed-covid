@@ -12,6 +12,10 @@ const columns = [
     title: "เบอร์",
     dataIndex: "phonenumber",
     key: "phonenumber",
+    // eslint-disable-next-line react/display-name
+    render: (text) => {
+      return <a href={`tel:${text}`}>{text}</a>;
+    },
   },
   {
     title: "ลิ้ง",
@@ -58,9 +62,33 @@ export async function getStaticProps() {
       other: "",
     },
     {
+      name: "ศูนย์เอราวัณ",
+      link: "",
+      phonenumber: "1646,02-220-7570",
+      other: "",
+    },
+    {
+      name: "โรงพยาบาล บุศราคัม เมืองทองธานี",
+      link: "",
+      phonenumber: "02-029-1661",
+      other: "",
+    },
+    {
+      name: "ศูนย์พักคอย อยู่ที่ซอยอ่อนนุช 35",
+      link: "",
+      phonenumber: "084-932-1491",
+      other: "",
+    },
+    {
+      name: "กรมการแพทย์",
+      link: "",
+      phonenumber: "1668",
+      other: "",
+    },
+    {
       name: "เพจเส้นด้าย-Zendai",
       link: "zendai.org",
-      phonenumber: "081-591-9714, 080-660-9998, 097-119-68",
+      phonenumber: "081-591-9714, 080-660-9998, 097-119-68,02-096-5000",
       other: "",
     },
     {
@@ -89,8 +117,8 @@ export async function getStaticProps() {
     },
     {
       name: "ทีมอนุดิษฐ์-AnudithTeam",
-      link: "",
-      phonenumber: "AnudithTeam",
+      link: "AnudithTeam",
+      phonenumber: "",
       other: "",
     },
     {
