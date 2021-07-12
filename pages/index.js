@@ -71,6 +71,7 @@ export async function getStaticProps() {
       other: "",
       key: 2,
     },
+
     {
       name: "ศูนย์เอราวัณ",
       link: "",
@@ -161,6 +162,13 @@ export async function getStaticProps() {
       phonenumber: "",
       other: "",
       key: 15,
+    },
+    {
+      name: "ลงทะเบียนจัดสรรเตียง 1668",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSd5jJKnT-Vw4IZ4aiFqNKiANxuIRhzq7ngm5EBdvURCYRfR3g/viewform",
+      phonenumber: "-",
+      other: "-",
+      key: 16,
     },
   ];
   return {
