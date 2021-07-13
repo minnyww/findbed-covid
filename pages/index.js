@@ -1,4 +1,4 @@
-import { Row, Typography, Table, Tag } from "antd";
+import { Row, Typography, Table, Tag, Button, Space, message } from "antd";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
@@ -54,6 +54,21 @@ const columns = [
 // G-2T6X6GCGC2
 // UA-201971423-1
 
+const share = async () => {
+  const shareData = {
+    title: "หาเตียง",
+    text: "ข้อมูลสำหรับผู้ป่วยต้องการเตียง",
+    url: "https://findbed-covid.vercel.app/",
+  };
+  if (navigator.share) {
+    await navigator.share(shareData);
+  } else {
+    message.info({
+      content: "บราวเซอร์ไม่รองรับ copy ลิงก์แทนก่อนน้า",
+    });
+  }
+};
+
 export default function Home({ lists }) {
   return (
     <div className={styles.container}>
@@ -74,9 +89,14 @@ export default function Home({ lists }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Row style={{ padding: "1rem" }}>
-        <Typography.Title level={2}>
-          ข้อมูลสำหรับช่วยเหลือผู้ป่วย
-        </Typography.Title>
+        <Space>
+          <Typography.Title level={2} style={{ marginBottom: "0rem" }}>
+            ข้อมูลสำหรับช่วยเหลือผู้ป่วย
+          </Typography.Title>
+          <Button type="primary" onClick={() => share()}>
+            แชร์เว็บนี้
+          </Button>
+        </Space>
       </Row>
       <Table
         columns={columns}
