@@ -104,7 +104,7 @@ export default function Home({ lists }) {
         size="small"
         pagination={{ pageSize: 50 }}
         rowKey={(row) => {
-          return row.key;
+          return row.name;
         }}
       />
     </div>
@@ -118,6 +118,20 @@ export async function getStaticProps() {
       link: "https://crmhi.nhso.go.th/",
       phonenumber: "",
       other: "",
+      key: 0,
+    },
+    {
+      name: "แฟมเมด co care",
+      link: "",
+      phonenumber: "",
+      other: "line : @fammedcocare",
+      key: 0,
+    },
+    {
+      name: "com covid",
+      link: "",
+      phonenumber: "",
+      other: "line : @comcovid-19",
       key: 0,
     },
     {
