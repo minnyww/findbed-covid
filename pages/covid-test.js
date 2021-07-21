@@ -1,12 +1,16 @@
 /* eslint-disable react/display-name */
-import { Input, Row, Table, Tag, Typography, Checkbox } from "antd";
+import { Input, Row, Table, Tag, Typography, Checkbox, Space } from "antd";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 
 const CheckboxGroup = Checkbox.Group;
 
-const filterOption = ["rt", "at", "ftf"];
+const filterOption = [
+  { label: "RT-PCR", value: "rt" },
+  { label: "Antigen Test", value: "at" },
+  { label: "Fit to fly", value: "ftf" },
+];
 
 const columns = [
   {
@@ -142,15 +146,17 @@ const CovidTest = ({ lists }) => {
         </Typography.Title>
       </Row>
       <Row style={{ padding: "1rem" }}>
-        <Input
-          placeholder="ค้นหา"
-          onChange={({ target: { value } }) => setSearch(value)}
-        />
-        <CheckboxGroup
-          options={filterOption}
-          value={checkList}
-          onChange={(value) => setCheckList(value)}
-        />
+        <Space direction="vertical">
+          <Input
+            placeholder="ค้นหา"
+            onChange={({ target: { value } }) => setSearch(value)}
+          />
+          <CheckboxGroup
+            options={filterOption}
+            value={checkList}
+            onChange={(value) => setCheckList(value)}
+          />
+        </Space>
       </Row>
       <Row>
         <Table
