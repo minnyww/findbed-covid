@@ -1,5 +1,6 @@
-import { Row, Typography, Table, Tag, Button, Space, message } from "antd";
+import { Row, Typography, Table, Tag, Button, Space, message, Col } from "antd";
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 const columns = [
@@ -89,14 +90,23 @@ export default function Home({ lists }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Row style={{ padding: "1rem" }}>
-        <Space>
-          <Typography.Title level={2} style={{ marginBottom: "0rem" }}>
-            ข้อมูลสำหรับช่วยเหลือผู้ป่วย
-          </Typography.Title>
+        <Col span={15}>
+          <Space>
+            <Typography.Title level={2} style={{ marginBottom: "0rem" }}>
+              ข้อมูลสำหรับช่วยเหลือผู้ป่วย
+            </Typography.Title>
+            <Link href="/covid-test" passHref>
+              <Typography.Link level={2} style={{ marginBottom: "0rem" }}>
+                ที่ตรวจ covid
+              </Typography.Link>
+            </Link>
+          </Space>
+        </Col>
+        <Col span={9} style={{ display: "flex", justifyContent: "flex-end" }}>
           <Button type="primary" onClick={() => share()}>
             แชร์เว็บนี้
           </Button>
-        </Space>
+        </Col>
       </Row>
       <Table
         columns={columns}
