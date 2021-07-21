@@ -114,6 +114,13 @@ export default function Home({ lists }) {
 export async function getStaticProps() {
   const lists = [
     {
+      name: "ฟอร์มลงทะเบียน สปสช",
+      link: "https://crmhi.nhso.go.th/",
+      phonenumber: "",
+      other: "",
+      key: 0,
+    },
+    {
       name: "สายด่วนกรมการแพทย์ ช่วยผู้ป่วยโควิด-19",
       link: "",
       phonenumber: "1669",
